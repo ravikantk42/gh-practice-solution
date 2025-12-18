@@ -1,9 +1,7 @@
 name: On Issue Creation
 run-name: An issue was opened by ${{ github.actor }} 🚀
 
-on:
-  issues:
-    types: [opened]
+on: issues
 
 jobs:
   greet-new-issue:
