@@ -1,0 +1,13 @@
+name: On Issue Creation
+run-name: An issue was opened by ${{ github.actor }} 🚀
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  greet-new-issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comment on new issue
+        run: echo "🎉 An issue with title '${{ github.event.issue.title }}' was created!"
