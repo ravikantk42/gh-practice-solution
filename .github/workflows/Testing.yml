@@ -1,5 +1,5 @@
 name: On Issue Creation
-run-name: An issue was opened by ${{ github.actor }} 🚀
+run-name: An issue was opened by ${{ github.actor }} 
 
 on: issues
 
